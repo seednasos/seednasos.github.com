@@ -1,2 +1,0 @@
-seednasos.github.com
-====================
