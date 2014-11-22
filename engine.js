@@ -42,5 +42,5 @@ repeat.onclick = function () {
 	button.innerHTML = "random <audio id=\"playSound\" src=" + path + " autoplay ></audio>";
 };
 show.onclick = function () {
-	show.innerHTML = path;
+	show.innerHTML = array[random].substring(0, array[random].length - 4);
 };
