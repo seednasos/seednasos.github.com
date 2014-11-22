@@ -8,7 +8,6 @@ var button = document.getElementById('button'),
 count = document.getElementById('count');
 var path, random, lengthArray = array.length;
 var j = 0, repArr = [];
-console.log(lengthArray)
 button.onclick = function () {
 	var flag = true;
 	var length = arr.length;
@@ -21,10 +20,10 @@ button.onclick = function () {
 				break;
 			}
 		}
-		if (flag) break;
+		if (flag) continue;
 		length = repArr.length;
 		for (i = 0; i < length; i++) {
-			if (random === arr[i]) {
+			if (random === repArr[i]) {
 				var mark = true;
 				break;
 			}
@@ -45,4 +44,3 @@ repeat.onclick = function () {
 show.onclick = function () {
 	show.innerHTML = path;
 };
-
